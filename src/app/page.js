@@ -5,7 +5,7 @@ import { Input } from "@/components/ui/input";
 export default function Home() {
   return (
     <div key="1" className="flex flex-col min-h-screen">
-      <nav className="flex items-center justify-between gap-4 px-4 py-2 border-b border-gray-100 md:gap-6 md:px-6">
+      <nav className="flex items-center justify-between gap-4 px-4 py-2 border-b border-gray-100 md:gap-6 md:px-6 bg-black text-white">
         <div className="flex items-center space-x-2">
           <Link className="flex items-center gap-2 font-semibold pr-2" href="#">
             <FlagIcon className="w-6 h-6 rounded-lg" />
@@ -28,7 +28,7 @@ export default function Home() {
           <Link className="text-sm font-semibold hover:underline" href="#">
             Pages
           </Link>
-          <Button size="sm" variant="outline">
+          <Button size="sm" variant="outline" className="text-black">
             Contact
           </Button>
         </div>
@@ -39,7 +39,7 @@ export default function Home() {
           style={{
             backgroundImage:
               "url(https://res.cloudinary.com/djtigzyfc/image/upload/f_auto,q_auto/v1/ngo-aarya/idydyr82esuc3zcyqznb)",
-            opacity: 0.1,
+            opacity: 0.2,
             zIndex: -1,
           }}
         ></div>
