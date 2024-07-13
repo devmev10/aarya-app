@@ -33,24 +33,33 @@ export default function Home() {
           </Button>
         </div>
       </nav>
-      <section className="grid items-center w-full py-12">
-        <div className="container mx-auto px-4 md:px-6">
+      <section className="relative grid items-center w-full py-12">
+        <div
+          className="absolute inset-0 bg-cover bg-center"
+          style={{
+            backgroundImage:
+              "url(https://res.cloudinary.com/djtigzyfc/image/upload/f_auto,q_auto/v1/ngo-aarya/idydyr82esuc3zcyqznb)",
+            opacity: 0.1,
+            zIndex: -1,
+          }}
+        ></div>
+        <div className="container mx-auto px-4 md:px-6 relative">
           <div className="grid gap-6 lg:grid-cols-[1fr_400px] lg:gap-12 xl:grid-cols-[1fr_600px]">
             <img
               alt="Hero"
               className="mx-auto aspect-video overflow-hidden rounded-xl object-bottom sm:w-full lg:order-last lg:aspect-square"
               height="550"
-              src="https://res.cloudinary.com/tropicolx/image/upload/v1715585968/Building%20a%20Landing%20Page%20with%20AI%20and%20Next.js/undraw_design_components_9vy6_p5m4en.svg"
+              src="https://res.cloudinary.com/djtigzyfc/image/upload/f_auto,q_auto/v1/ngo-aarya/one-kid-study-with-books"
               width="550"
             />
             <div className="flex flex-col justify-center space-y-4">
               <div className="space-y-2">
                 <h1 className="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none">
-                  Speed up your workflow with beautifully designed components
+                  Aarya Sikshantar Foundation
                 </h1>
                 <p className="max-w-[600px] text-gray-500 md:text-xl">
-                  Accessible. Customizable. Open Source. Designed for developer
-                  happiness.
+                  Dedicated to Ensuring Every Child Has Access to Quality
+                  Education
                 </p>
               </div>
               <div className="flex flex-col gap-2 min-[400px]:flex-row">
@@ -58,13 +67,13 @@ export default function Home() {
                   className="inline-flex h-10 items-center justify-center rounded-md bg-gray-900 px-8 text-sm font-medium text-gray-50 shadow transition-colors hover:bg-gray-900/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-gray-950 disabled:pointer-events-none disabled:opacity-50"
                   href="#"
                 >
-                  Get Started
+                  Discover More
                 </Link>
                 <Link
-                  className="inline-flex h-10 items-center justify-center rounded-md border border-gray-200 border-gray-200 bg-white px-8 text-sm font-medium shadow-sm transition-colors hover:bg-gray-100 hover:text-gray-900 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-gray-950 disabled:pointer-events-none disabled:opacity-50"
+                  className="inline-flex h-10 items-center justify-center rounded-md border border-gray-200 bg-white px-8 text-sm font-medium shadow-sm transition-colors hover:bg-gray-100 hover:text-gray-900 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-gray-950 disabled:pointer-events-none disabled:opacity-50"
                   href="#"
                 >
-                  GitHub
+                  Join our Cause
                 </Link>
               </div>
             </div>
